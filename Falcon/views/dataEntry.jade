@@ -1,0 +1,8 @@
+extends layout
+block content
+    h1= title
+    form#formNewData(name="data",method ="post",action="/addData")
+        input#inputX(type="number",name="x" placeholder="X Value")
+        input#inputY(type="number",name="y" placeholder="Y Value")
+        button#btnSubmit(type="submit") submit
+

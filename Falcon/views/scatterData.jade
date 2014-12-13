@@ -1,0 +1,10 @@
+extends layout
+block content
+    h1.
+        Scatter Data
+    ul
+        each datapoint, i in scatterData
+            li
+                a(href="about:#{datapoint.x}")= datapoint.x +','+ datapoint.y
+
+

@@ -1,0 +1,8 @@
+extends layout
+block content
+    h1.
+        Today's Activities
+    ul
+        each activity, i in activities
+            li
+                a(href="about:#{activity._id}")= activity.type

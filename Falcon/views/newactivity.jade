@@ -1,0 +1,13 @@
+extends layout
+block content
+        h1= title
+        form#formNewActivity(name="activity",method ="post",action="/addactivity")
+            input#inputActivityType(type="text",name="type" placeholder="Type")
+            input#inputDescription(type="textarea",name="description" placeholder="Description")
+            input#inputDTG(type="number",name="dtg" placeholder="DTG" min="-10" max="10")
+            input#inputUtility(type="number",name="utility" placeholder="Utility" min="1" max="100")
+            input#inputMotivation(type="number",name="motivation" placeholder="Motivation" min="1" max="10")
+            input#inputDuration(type="number",name="duration" placeholder="Duration" min="1" max="60")
+            input#inputEngagement(type="number",name="engagement" placeholder="Engagement" min="1" max="10")
+            button#btnSubmit(type="submit") submit
+
